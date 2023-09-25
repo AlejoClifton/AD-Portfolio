@@ -1,24 +1,33 @@
 'use client';
 
 import { SectionContainer, FormContainer } from '@/styled-components/components/sc-main';
-import { useState } from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+const API_SERVICES = process.env.API_SERVICES;
+const API_TEMPLATE = process.env.API_TEMPLATE;
+const API_PUBLIC = process.env.API_PUBLIC_KEY;
 
 const Form = () => {
-    const [data, setData] = useState({ name: '', email: '', message: '' });
-
-    const handleChange = (e) => {
-        setData({ ...data, [e.target.name]: e.target.value });
-    };
+    const form = useRef();
 
     const onSubmit = (e) => {
         e.preventDefault();
 
-        console.log(data);
+        emailjs.sendForm(API_SERVICES, API_TEMPLATE, form.current, API_PUBLIC).then(
+            (result) => {
+                alert('Message sent successfully');
+                console.log(result.text);
+            },
+            (error) => {
+                console.log(error.text);
+            },
+        );
     };
 
     return (
         <SectionContainer id="contact">
-            <FormContainer action="" onSubmit={onSubmit}>
+            <FormContainer ref={form} onSubmit={onSubmit}>
                 <header>
                     <h2>Let’s work together on your next proyect</h2>
                     <p>Improve user experience and performance. Achieve excellence in digital solutions.</p>
@@ -26,15 +35,15 @@ const Form = () => {
                 <div>
                     <div>
                         <label htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" onChange={handleChange} placeholder='Name'/>
+                        <input type="text" name="user_name" id="name" placeholder="Name" />
                     </div>
                     <div>
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email" onChange={handleChange} placeholder='Email'/>
+                        <input type="email" name="user_email" id="email" placeholder="Email" />
                     </div>
                     <div>
                         <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" onChange={handleChange} placeholder='Message'></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <input type="submit" value="Send" />
                 </div>
