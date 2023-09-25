@@ -19,7 +19,7 @@ export const flexContainerDiv = styled.div`
 
 // Componentes
 export const NavbarContainer = styled(flexContainerUl)`
-    background-color: ${colors.backgroundSectionTwo};
+    background-color: ${colors.backgroundHeader};
     left: 50%;
     list-style: none;
     padding: 15px;

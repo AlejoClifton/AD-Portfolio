@@ -6,7 +6,7 @@ import ListExperience from './ListExperience';
 const Experience = () => {
     return (
         <SectionContainer id="experience">
-            <SectionHeader text={'That I am?'} title={'My Experience'} />
+            <SectionHeader text={'Who I am?'} title={'My Experience'} />
             <ContainerExperience>
                 <div>
                     <SectionHeader text={'WORK EXPERIENCE'} title={'My Awesome Experience'} bool={false} />

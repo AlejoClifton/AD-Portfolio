@@ -13,6 +13,7 @@ export const colors = {
     backgroundSectionOne: '#1D2131',
     backgroundSectionTwo: '#323959',
     backgroundSectionThreee: '#23283D',
+    backgroundHeader: '#1D2131',
 
     borderSectionOne: '#ed5260',
     borderExperience: '#CFCFCF',
