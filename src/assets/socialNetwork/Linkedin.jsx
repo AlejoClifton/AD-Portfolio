@@ -1,5 +1,3 @@
-'use client';
-
 import { SvgStyles } from '../../styled-components/sc-globals';
 
 const Linkedin = (props) => (

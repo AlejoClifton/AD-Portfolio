@@ -1,7 +1,7 @@
 import SectionHeader from './utilities/SectionHeader';
 import { Fragment } from 'react';
 import { SectionContainer, ContainListProjects } from '@/styled-components/components/sc-main';
-import { sectionProjects } from '@/utils/modelsData';
+import { sectionProjects } from '@/models/modelsData';
 
 const Portfolio = () => {
     return (

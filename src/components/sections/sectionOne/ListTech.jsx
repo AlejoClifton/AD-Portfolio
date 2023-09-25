@@ -1,4 +1,6 @@
-import { sectionOneData } from '@/utils/modelsData';
+'use client';
+
+import { sectionOneData } from '@/models/modelsData';
 import { ContainData, ContainListTech, ContainPersonalData } from '@/styled-components/components/sc-main';
 
 const ListTech = () => {

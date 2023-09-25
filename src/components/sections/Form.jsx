@@ -1,3 +1,5 @@
+'use client';
+
 import { SectionContainer, FormContainer } from '@/styled-components/components/sc-main';
 import { useState } from 'react';
 

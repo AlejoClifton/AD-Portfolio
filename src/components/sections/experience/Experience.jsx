@@ -1,6 +1,6 @@
 import SectionHeader from '../utilities/SectionHeader';
 import { SectionContainer, ContainerExperience } from '@/styled-components/components/sc-main';
-import { sectionExperience } from '@/utils/modelsData';
+import { sectionExperience } from '@/models/modelsData';
 import ListExperience from './ListExperience';
 
 const Experience = () => {

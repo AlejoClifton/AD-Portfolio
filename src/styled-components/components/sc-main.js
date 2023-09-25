@@ -224,12 +224,28 @@ export const ContainListProjects = styled.div`
             margin: 0 10px;
         `)}
 
+        ${laptop(`
+            width: calc(100% / 3);
+        `)}
+
         div {
             position: relative;
-            width: 100%;
+
             img {
-                width: 100%;
                 object-fit: cover;
+                width: 100%;
+                min-height: 200px;
+                max-height: 200px;
+
+                ${tablet(`
+                    max-height: 300px;
+                    min-height: 200px;
+                `)}
+
+                ${laptop(`
+                    height: 300px;
+                    max-height: 300px;
+                `)}
             }
 
             > div {

@@ -1,8 +1,10 @@
+'use client';
+
 import ListTech from './ListTech';
 import SectionHeader from '../utilities/SectionHeader';
 import { ButtonContainer } from '@/styled-components/components/sc-buttons';
 import { SectionOneStyles, ParrafoSection } from '@/styled-components/components/sc-main';
-import { sectionOneData } from '@/utils/modelsData';
+import { sectionOneData } from '@/models/modelsData';
 
 const SectionOne = () => {
     return (

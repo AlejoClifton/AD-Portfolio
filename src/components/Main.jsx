@@ -1,5 +1,3 @@
-'use client';
-
 import Experience from './sections/experience/Experience';
 import Form from './sections/Form';
 import Portfolio from './sections/Portfolio';
