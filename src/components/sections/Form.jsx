@@ -4,17 +4,13 @@ import { SectionContainer, FormContainer } from '@/styled-components/components/
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const API_SERVICES = process.env.API_SERVICES;
-const API_TEMPLATE = process.env.API_TEMPLATE;
-const API_PUBLIC = process.env.API_PUBLIC_KEY;
-
 const Form = () => {
     const form = useRef();
 
     const onSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(API_SERVICES, API_TEMPLATE, form.current, API_PUBLIC).then(
+        emailjs.sendForm('service_p0sol4g', 'template_74tt6b7', form.current, 'tFRTJGRg5LW2qr8cD').then(
             (result) => {
                 alert('Message sent successfully');
                 console.log(result.text);
