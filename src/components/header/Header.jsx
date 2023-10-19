@@ -1,5 +1,5 @@
 import './header.scss';
-import SwitchMenu from '@/utils/SwitchMenu/SwitchMenu';
+import SwitchMenu from '@/utils/switchMenu/SwitchMenu';
 import FondoHeaderSVG from '@/assets/FondoHeaderSVG';
 
 const Header = () => {

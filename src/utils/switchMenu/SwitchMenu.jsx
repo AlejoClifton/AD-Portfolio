@@ -1,7 +1,7 @@
 'use client';
 
 import { Github, Instagram, Linkedin, Tiktok } from '@/assets/socialNetwork';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './switchMenu.scss';
 
 const SwitchMenu = () => {

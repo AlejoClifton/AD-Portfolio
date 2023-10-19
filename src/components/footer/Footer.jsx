@@ -1,10 +1,5 @@
 import './footer.scss';
-import Email from '../../assets/socialNetwork/Email';
-import Github from '../../assets/socialNetwork/Github';
-import Instagram from '../../assets/socialNetwork/Instagram';
-import Linkedin from '../../assets/socialNetwork/Linkedin';
-import Tiktok from '@/assets/socialNetwork/tiktok';
-import { Link } from 'next/link';
+import { Email, Github, Linkedin, Instagram, Tiktok } from '@/assets/socialNetwork';
 
 const Footer = () => {
     return (
