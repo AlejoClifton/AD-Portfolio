@@ -1,0 +1,75 @@
+@import '@/styles/variables/index.scss';
+
+.experience {
+    background-color: map-get($color, 'background');
+    padding: 50px 0;
+
+    div {
+        margin: 0 auto;
+        max-width: 68rem;
+
+        .qualification {
+            margin-left: 1.875rem;
+        }
+    }
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+    @include media(laptop) {
+        flex-direction: row;
+        width: 100%;
+        margin: unset;
+    }
+
+    .sectionSubHeader {
+        margin: 3.75rem 0 2.5rem 0;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.875rem;
+
+        aside {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-right: 1.25rem;
+
+            svg {
+                height: 1.875rem;
+                width: 1.875rem;
+            }
+
+            div {
+                background-color: map-get($color, 'four');
+                height: calc(100% - 30px);
+                width: 2px;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin-top: 1.25rem;
+
+                a {
+                    margin-left: 0.3125rem;
+                    color: map-get($color, 'white');
+
+                    &:hover {
+                        color: map-get($color, 'secondary');
+                    }
+                }
+            }
+        }
+    }
+}

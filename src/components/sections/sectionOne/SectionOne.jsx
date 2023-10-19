@@ -1,28 +1,20 @@
-'use client';
-
+import './sectionOne.scss';
+import ListPersonalInformation from './ListPersonalInformation';
 import ListTech from './ListTech';
 import SectionHeader from '../utilities/SectionHeader';
-import { ButtonContainer } from '@/styled-components/components/sc-buttons';
-import { SectionOneStyles, ParrafoSection } from '@/styled-components/components/sc-main';
 import { sectionOneData } from '@/models/modelsData';
 
 const SectionOne = () => {
     return (
-        <SectionOneStyles id="aboutus">
-            <main>
-                <div>
-                    <img src="/imagenX.webp" alt="Imagen por defecto" />
-                </div>
-                <div>
-                    <SectionHeader text={'Discover'} title={'About Me'} />
-                    <ParrafoSection>{sectionOneData.listParragraphs[0]}</ParrafoSection>
-                    <ListTech />
-                    <ButtonContainer href={`/${sectionOneData.cv}`} download={`${sectionOneData.cv}`}>
-                        Download CV
-                    </ButtonContainer>
-                </div>
-            </main>
-        </SectionOneStyles>
+        <div id="aboutus" className="sectionOne wrapper">
+            <SectionHeader text={'Discover'} title={'Quién soy'} />
+            <p>{sectionOneData.listParragraphs[0]}</p>
+            <ListTech />
+            <a href={`/${sectionOneData.cv}`} download={`${sectionOneData.cv}`} className="buttonDetail">
+                Download CV
+            </a>
+            <ListPersonalInformation />
+        </div>
     );
 };
 

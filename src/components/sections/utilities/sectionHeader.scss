@@ -1,0 +1,28 @@
+@import '@/styles/variables/index.scss';
+
+.sectionHeader,
+.sectionSubHeader {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        color: #668dc0;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-bottom: 0.625rem;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.sectionHeader {
+    width: 90%;
+
+    @include media(laptop) {
+        width: unset;
+    }
+}

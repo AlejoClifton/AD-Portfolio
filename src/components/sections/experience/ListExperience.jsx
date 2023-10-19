@@ -1,38 +1,31 @@
 import { Work, Student } from '@/assets';
-import { ParrafoSection } from '@/styled-components/components/sc-main';
 
 const ListExperience = ({ listData, type }) =>
     listData.map((item, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="information">
+                <aside>
+                    {type === 'work' ? <Work /> : <Student />}
+                    <div></div>
+                </aside>
                 <div>
-                    <aside>
-                        {type === 'work' ? <Work /> : <Student />}
-                        <div></div>
-                    </aside>
-                    <div>
-                        <h4>
-                            {item.title} <span>{item.subtitle}</span>
-                        </h4>
-                        {item.listParragraphs.map((item) => {
-                            if (item === 'Check it out at') {
-                                return (
-                                    <ParrafoSection $parraf key={item}>
-                                        {item}
-                                        <a href="https://rosiestetica.com/" target="_blank" rel="noopener noreferrer">
-                                            www.rosiestetica.com
-                                        </a>
-                                    </ParrafoSection>
-                                );
-                            }
-
+                    <h4>
+                        {item.title} <span>{item.subtitle}</span>
+                    </h4>
+                    {item.listParragraphs.map((item) => {
+                        if (item === 'Échale un vistazo en') {
                             return (
-                                <ParrafoSection $parraf key={item}>
+                                <p key={item}>
                                     {item}
-                                </ParrafoSection>
+                                    <a href="https://rosiestetica.com/" target="_blank" rel="noopener noreferrer">
+                                        www.rosiestetica.com
+                                    </a>
+                                </p>
                             );
-                        })}
-                    </div>
+                        }
+
+                        return <p key={item}>{item}</p>;
+                    })}
                 </div>
             </div>
         );

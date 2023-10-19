@@ -1,0 +1,94 @@
+@import '@/styles/variables/index.scss';
+
+.sectionOne {
+    width: 90%;
+
+    @include media(laptop) {
+        width: unset;
+    }
+
+    a {
+        margin-top: 1.875rem;
+        width: 100%;
+        text-align: center;
+
+        @include media(tablet) {
+            width: 30%;
+            margin: 1.875rem auto;
+        }
+
+        @include media(laptop) {
+            width: 20%;
+            margin: unset;
+            margin-top: 1.875rem;
+        }
+    }
+
+    > p {
+        margin-top: 1.25rem;
+    }
+}
+
+.listTech {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.625rem;
+
+        @include media(laptop) {
+            justify-content: unset;
+        }
+
+        &:first-child {
+            width: 100%;
+        }
+
+        h3 {
+            margin: 1.875rem 0 0.625rem 0;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.25rem;
+
+            @include media(laptop) {
+                flex-direction: row;
+                justify-content: unset;
+            }
+
+            svg {
+                margin: 0 0.625rem;
+                width: unset;
+            }
+        }
+    }
+}
+
+.listPersonInformation {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.875rem;
+
+    @include media(tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p {
+        color: map-get($color, 'four');
+        font-weight: bold;
+    }
+}

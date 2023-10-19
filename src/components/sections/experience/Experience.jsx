@@ -1,23 +1,25 @@
 import SectionHeader from '../utilities/SectionHeader';
-import { SectionContainer, ContainerExperience } from '@/styled-components/components/sc-main';
 import { sectionExperience } from '@/models/modelsData';
 import ListExperience from './ListExperience';
+import './experience.scss';
 
 const Experience = () => {
     return (
-        <SectionContainer id="experience">
-            <SectionHeader text={'Who I am?'} title={'My Experience'} />
-            <ContainerExperience>
-                <div>
-                    <SectionHeader text={'WORK EXPERIENCE'} title={'My Awesome Experience'} bool={false} />
-                    <ListExperience listData={sectionExperience.listExperience} type="work" />
+        <div id="experience" className="experience">
+            <div>
+                <SectionHeader text={'Who I am?'} title={'Experiencia'} />
+                <div className='sections'>
+                    <div>
+                        <SectionHeader text={'WORK EXPERIENCE'} title={'Mi experiencia laboral'} bool={false} />
+                        <ListExperience listData={sectionExperience.listExperience} type="work" />
+                    </div>
+                    <div className='qualification'>
+                        <SectionHeader text={'QUALIFICATION'} title={'Mi educación'} bool={false} />
+                        <ListExperience listData={sectionExperience.listStudent} type="student" />
+                    </div>
                 </div>
-                <div>
-                    <SectionHeader text={'QUALIFICATION'} title={'My Education'} bool={false} />
-                    <ListExperience listData={sectionExperience.listStudent} type="student" />
-                </div>
-            </ContainerExperience>
-        </SectionContainer>
+            </div>
+        </div>
     );
 };
 

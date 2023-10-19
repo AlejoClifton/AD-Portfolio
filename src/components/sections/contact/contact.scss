@@ -1,0 +1,73 @@
+@import '@/styles/variables/index.scss';
+
+.contact {
+    background-color: map-get($color, 'background');
+}
+.formContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media(laptop) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+        background-color: map-get($color, 'backgroundForm');
+        height: 30%;
+        margin: 0 auto 1.25rem auto;
+        padding: 1rem;
+        width: 90%;
+
+        @include media(laptop) {
+            width: 48%;
+            margin: unset;
+        }
+
+        h2 {
+            font-size: 2em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+    }
+    > div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+
+        @include media(laptop) {
+            width: 50%;
+            margin: unset;
+        }
+
+        > div {
+            input,
+            textarea {
+                border-radius: 0.3125rem;
+                border: 1px solid map-get($color, 'four');
+                color: map-get($color, 'four');
+                margin-bottom: 1rem;
+                padding: 0.5rem 1rem;
+                width: 100%;
+            }
+            label {
+                color: map-get($color, 'four');
+                font-weight: bold;
+            }
+        }
+        > input {
+            background-color: map-get($color, 'secondary');
+            border-radius: 0.3125rem;
+            color: map-get($color, 'white');
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                background-color: map-get($color, 'primary');
+                color: white;
+            }
+        }
+    }
+}

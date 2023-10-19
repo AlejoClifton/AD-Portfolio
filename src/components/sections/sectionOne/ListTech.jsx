@@ -1,14 +1,11 @@
-'use client';
-
 import { sectionOneData } from '@/models/modelsData';
-import { ContainData, ContainListTech, ContainPersonalData } from '@/styled-components/components/sc-main';
 
 const ListTech = () => {
     return (
-        <ContainData>
+        <div className='listTech'>
             {sectionOneData.listSkills.map((skill) => {
                 return (
-                    <ContainListTech key={skill.title}>
+                    <div key={skill.title}>
                         <div>
                             <h3>{skill.title}</h3>
                         </div>
@@ -20,19 +17,10 @@ const ListTech = () => {
                                 </div>
                             );
                         })}
-                    </ContainListTech>
+                    </div>
                 );
             })}
-            <ContainPersonalData>
-                {sectionOneData.listPersonalData.map((item) => {
-                    return (
-                        <p key={item.title}>
-                            <span>{item.title}</span> {item.value}
-                        </p>
-                    );
-                })}
-            </ContainPersonalData>
-        </ContainData>
+        </div>
     );
 };
 

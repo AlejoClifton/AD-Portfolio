@@ -1,0 +1,64 @@
+@import '@/styles/variables/index.scss';
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    color: map-get($color, 'white');
+
+    span {
+        color: map-get($color, 'four');
+    }
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+
+    span {
+        color: map-get($color, 'four');
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+a {
+    color: map-get($color, 'four');
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: map-get($color, 'secondary');
+    }
+}
+
+p {
+    color: map-get($color, 'four');
+}
+
+body {
+    background-color: map-get($color, 'backgroundMain');
+}
+
+.buttonDetail {
+    background-color: map-get($color, 'secondary');
+    border-radius: 0.3125rem;
+    color: map-get($color, 'white');
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        background-color: map-get($color, 'primary');
+        color: white;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 68rem;
+    padding: 50px 0;
+}

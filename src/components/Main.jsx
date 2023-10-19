@@ -1,17 +1,16 @@
 import Experience from './sections/experience/Experience';
-import Form from './sections/Form';
-import Portfolio from './sections/Portfolio';
+import Contact from './sections/contact/Contact';
+import Portfolio from './sections/portfolio/Portfolio';
 import SectionOne from './sections/sectionOne/SectionOne';
-import { MainContainer } from '@/styled-components/components/sc-main';
 
 const Main = () => {
     return (
-        <MainContainer>
+        <main>
             <SectionOne />
             <Experience />
             <Portfolio />
-            <Form />
-        </MainContainer>
+            <Contact />
+        </main>
     );
 };
 

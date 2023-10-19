@@ -9,6 +9,5 @@ import PostgreSQL from './PostgreSQL';
 import ReactSVG from './React';
 import SQL from './SQL';
 import Scss from './Scss';
-import StyledComponent from './StyledComponent';
 
-export { Express, Javascript, MongoDB, Mysql, NextJS, NodeJS, PostgreSQL, ReactSVG, SQL, Scss, StyledComponent };
+export { Express, Javascript, MongoDB, Mysql, NextJS, NodeJS, PostgreSQL, ReactSVG, SQL, Scss };

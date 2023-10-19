@@ -1,0 +1,207 @@
+@import '@/styles/variables/index.scss';
+
+.header {
+    background-color: map-get($color, 'background');
+    padding-top: 3.125rem;
+    position: relative;
+
+    @include media(laptop) {
+        height: 43.75rem;
+    }
+
+    .svgHeader {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include media(laptop) {
+            display: block;
+        }
+    }
+}
+
+.navbarContainer {
+    align-items: center;
+    background-color: map-get($color, 'background');
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+
+    svg {
+        path {
+            fill: map-get($color, 'white');
+        }
+    }
+}
+
+.list {
+    align-items: center;
+    display: none;
+    justify-content: center;
+
+    @include media(laptop) {
+        display: flex;
+    }
+}
+
+.menu-container {
+    display: none;
+    transition: height 0.3s ease;
+
+    @include media(laptop) {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.menu-container.active {
+    background-color: map-get($color, 'backgroundMain');
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &.listUrls {
+            height: 80%;
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+
+        &.listSocial {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            flex-direction: row;
+
+            svg{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+
+    @include media(laptop) {
+        display: none;
+    }
+}
+
+.listUrls,
+.listSocial {
+    li {
+        font-weight: bold;
+        margin: 0 1rem;
+    }
+}
+
+.listSocial {
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include media(tablet) {
+                flex-direction: row;
+            }
+
+            &:hover {
+                p {
+                    color: map-get($color, 'secondary');
+                }
+                svg {
+                    path {
+                        fill: map-get($color, 'secondary');
+                    }
+                }
+            }
+        }
+
+        svg {
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            width: 1.25rem;
+        }
+    }
+}
+
+.headerContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 68rem;
+    width: 90%;
+    margin: 50px auto 0 auto;
+
+    @include media(laptop) {
+        flex-direction: row;
+        margin: 100px auto;
+        width: unset;
+    }
+}
+
+.textContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+
+    h1 {
+        margin: 1.875rem 0;
+        line-height: 1.2;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    a {
+        color: map-get($color, 'secondary');
+        font-weight: bold;
+        margin-top: 1.875rem;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid map-get($color, 'secondary');
+        font-size: 1.2rem;
+
+        &:hover {
+            color: map-get($color, 'white');
+            border-bottom: 1px solid map-get($color, 'white');
+        }
+    }
+}
+
+.logoContainer {
+    margin: 1.875rem 0;
+
+    @include media(laptop) {
+        margin: unset;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 18.75rem;
+        object-fit: cover;
+        width: 18.75rem;
+    }
+}

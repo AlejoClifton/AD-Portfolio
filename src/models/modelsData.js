@@ -1,28 +1,26 @@
-import { Javascript, NextJS, ReactSVG, Scss, StyledComponent, NodeJS, Express, Mysql, MongoDB, PostgreSQL, SQL } from '../assets/technologies/index.js';
+import { Javascript, NextJS, ReactSVG, Scss, NodeJS, Express, Mysql, MongoDB, PostgreSQL, SQL } from '../assets/technologies/index.js';
 import { Docker, Git, Figma, Jira } from '../assets/others/index.js';
 
 export const sectionOneData = {
     listParragraphs: [
-        `Hello! I'm Alejo Tomás Clifton Goldney, a full stack developer with 2 years of experience, focused on web and mobile development. I
-        transform ideas into impactful digital experiences. Always seeking challenges and continuous learning. Let's create something
-        amazing together!`,
+        `¡Hola! Soy Alejo Tomás Clifton Goldney, un desarrollador full stack con 2 años de experiencia, enfocado en desarrollo web y móvil. Transformo ideas en experiencias digitales impactantes. Siempre buscando desafíos y aprendizaje continuo. ¡Creemos algo increíble juntos!`,
     ],
     listPersonalData: [
+        // {
+        //     title: 'Número:',
+        //     value: '+54 9 11 2387-1729.',
+        // },
         {
-            title: 'Phone:',
-            value: '+54 9 11 2387-1729.',
+            title: 'Experiencia:',
+            value: '+2 años.',
         },
         {
-            title: 'Experience:',
-            value: '+2 years.',
-        },
-        {
-            title: 'City:',
+            title: 'Cuidad:',
             value: 'Buenos Aires, Argentina.',
         },
         {
             title: 'Email:',
-            value: 'cliftonalejo@gmail.com.',
+            value: 'codeclif.contact@gmail.com.',
         },
     ],
     listSkills: [
@@ -34,7 +32,6 @@ export const sectionOneData = {
                 { name: 'React', icon: <ReactSVG /> },
                 { name: 'React Native', icon: <ReactSVG /> },
                 { name: 'Scss', icon: <Scss /> },
-                { name: 'Styled Components', icon: <StyledComponent /> },
             ],
         },
         {
@@ -68,37 +65,36 @@ export const sectionExperience = {
             subtitle: '(01-06-2023 - present)',
             listParragraphs: [
                 `
-                I developed a Landing Page for Rosiestetica showcasing their services and implemented an admin area for appointment and
-                content management.`,
-                `Utilized technologies: NEXT JS, SCSS, Node JS, Express JS, MySQL, Docker.`,
-                `Check it out at`,
+                Desarrollé una página de aterrizaje para Rosiestetica mostrando sus servicios e implementé un área de administración para gestionar citas y contenido.`,
+                `Tecnologías utilizadas: NEXT JS, SCSS, Node JS, Express JS, MySQL, Docker.`,
+                `Échale un vistazo en`,
             ],
             link: 'https://www.rosiestetica.com.ar/',
             text: 'www.rosiestetica.com.ar',
         },
         {
-            title: 'Full Stack Developer at Sodeco.',
+            title: 'Full Stack Developer en Sodeco.',
             subtitle: '(01-02-2023 / 01-09-2023)',
             listParragraphs: [
-                `At Sodeco, I excelled as a Fullstack Developer, partnering with a variety of clients to deliver comprehensive solutions.`,
-                `My achievements include effective VPS server management, successful project migration from PHP to AngularJS and Spring Boot,
-                and leadership roles in multiple projects with a focus on clean code and client communication.`,
-                `Tools/Technologies: IDE: Visual Code Next JS React Native SCSS Java-Spring Boot MySQL Git"`,
+                `En Sodeco, me destacé como Desarrollador Fullstack, colaborando con una variedad de clientes para ofrecer soluciones integrales.`,
+                `Mis logros incluyen una eficaz gestión de servidores VPS, una exitosa migración de proyectos de PHP a AngularJS y Spring Boot,
+                y roles de liderazgo en varios proyectos, centrándome en código limpio y comunicación con el cliente.`,
+                `Herramientas/Tecnologías: IDE: Visual Code, Next JS, React Native, SCSS, Java-Spring Boot, MySQL, Git.`,
             ],
         },
         {
-            title: 'Frontend Developer at Innova - Artear (Canal 13 / TN).',
+            title: 'Frontend Developer en Innova - Artear (Canal 13 / TN).',
             subtitle: '(21-02-2022 / 01-02-2023)',
             listParragraphs: [
-                `During my tenure at INNOVA, I enhanced user experience and optimized performance for TN and Eltrece websites.`,
-                `Notable achievements include a 25% improvement in font loading speed, substantial contribution to 'Longform' development for
-                immersive user experiences, and seamless integration of live streaming for TN.`,
-                `For Eltrece, I played a key role in a ground-up site redesign, ensuring a high-quality, user-friendly production version.
-                Additionally, I implemented performance enhancements pre-launch to deliver an optimal user experience.`,
-                `At INNOVA, I identified and proposed valuable improvements for Eltrece, well-received by the company. This period allowed me
-                to leverage my technical and creative skills to elevate TN and Eltrece websites.`,
-                `If you have inquiries or projects in mind, I'm eager to contribute my experience to help you achieve your goals.`,
-                `Tools / Technologies: IDE: Visual Code React JS SCSS Git Enzyme / Jest`,
+                `Durante mi tiempo en INNOVA, mejoré la experiencia del usuario y optimicé el rendimiento de los sitios web de TN y Eltrece.`,
+                `Logros destacados incluyen una mejora del 25% en la velocidad de carga de fuentes, una contribución sustancial al desarrollo de 'Longform'
+                para experiencias inmersivas del usuario, e integración fluida de transmisión en vivo para TN.`,
+                `Para Eltrece, desempeñé un papel clave en el rediseño completo del sitio, asegurando una versión de producción de alta calidad y fácil de usar.
+                Además, implementé mejoras de rendimiento antes del lanzamiento para ofrecer una experiencia óptima al usuario.`,
+                `En INNOVA, identifiqué y propuse valiosas mejoras para Eltrece, que fueron muy bien recibidas por la empresa. Este período me permitió
+                aprovechar mis habilidades técnicas y creativas para elevar los sitios web de TN y Eltrece.`,
+                `Si tienes consultas o proyectos en mente, estoy ansioso por contribuir con mi experiencia para ayudarte a alcanzar tus objetivos.`,
+                `Herramientas / Tecnologías: IDE: Visual Code, React JS, SCSS, Git, Enzyme / Jest.`,
             ],
         },
     ],
@@ -107,24 +103,22 @@ export const sectionExperience = {
             title: 'Web Developer (React-js). Coderhouse.',
             subtitle: '(2021)',
             listParragraphs: [
-                `I completed a dedicated course on React.js, where I achieved an average of 10 and stood as the top performer in the class. I
-                also actively assisted and supported fellow students.`,
+                `
+                Completé un curso dedicado sobre React.js, donde logré un promedio de 10 y me destacé como el mejor rendimiento de la clase. También ayudé activamente y brindé apoyo a mis compañeros estudiantes.`,
             ],
         },
         {
             title: 'Desarrollo web (HTML-CSS-JS-NODEJS-EXPRESS. Brian Lara.',
             subtitle: '(2021)',
             listParragraphs: [
-                `I've learned the fundamentals of web development on both the front-end and back-end, enabling me to specialize in this
-            programming sector.`,
+                `He aprendido los fundamentos del desarrollo web tanto en el front-end como en el back-end, lo que me ha permitido especializarme en este sector de programación.`,
             ],
         },
         {
             title: 'Técnico Universitario en Programación. UTN Pacheco.',
             subtitle: '(2020 - 2021)',
             listParragraphs: [
-                `I learned to code, establishing a strong foundation to excel in the industry. Additionally, I maintained an overall GPA of 9
-                across 22 courses in my academic career.`,
+                `Aprendí a programar, estableciendo una sólida base para destacarme en la industria. Además, mantuve un promedio general de 9 en 22 cursos a lo largo de mi carrera académica.`,
             ],
         },
     ],
@@ -137,40 +131,37 @@ export const sectionProjects = {
             img: '/rosiestetica.png',
             alt: 'Rosiestetica',
             listTech: [
-                { id: 1, icon: <NextJS /> },
-                { id: 2, icon: <Scss /> },
-                { id: 3, icon: <NodeJS /> },
-                { id: 4, icon: <Express /> },
-                { id: 5, icon: <Mysql /> },
-                { id: 6, icon: <Docker /> },
+                { id: 1, name: 'next js' },
+                { id: 2, name: 'scss' },
+                { id: 3, name: 'node js' },
+                { id: 4, name: 'express js' },
+                { id: 5, name: 'mysql' },
+                { id: 6, name: 'docker' },
             ],
             link: 'https://www.rosiestetica.com/',
-            text: 'www.rosiestetica.com',
         },
         {
             id: 2,
             img: '/bunji.png',
-            alt: 'Bunji',
+            alt: 'Bunji en progreso',
             listTech: [
-                { id: 1, icon: <NextJS /> },
-                { id: 2, icon: <StyledComponent /> },
-                { id: 3, icon: <NodeJS /> },
-                { id: 4, icon: <Express /> },
-                { id: 5, icon: <Mysql /> },
+                { id: 1, name: 'next js' },
+                { id: 2, name: 'scss' },
+                { id: 3, name: 'node js' },
+                { id: 4, name: 'express js' },
+                { id: 5, name: 'mysql' },
             ],
-            link: '',
-            text: 'Bunji, still in progress, gaining mastery.',
+            link: 'https://alejoclifton.vercel.app/',
         },
         {
             id: 3,
-            img: '/imagenblanca.jpg',
-            alt: 'Anahi LandingPage',
+            img: '/landing.png',
+            alt: 'Alejo Clifton Portafolio',
             listTech: [
-                { id: 1, icon: <NextJS /> },
-                { id: 2, icon: <StyledComponent /> },
+                { id: 1, name: 'next js' },
+                { id: 2, name: 'scss' },
             ],
-            link: '',
-            text: 'Anahí Landing Page, in development.',
+            link: 'https://alejoclifton.vercel.app/',
         },
     ],
 };

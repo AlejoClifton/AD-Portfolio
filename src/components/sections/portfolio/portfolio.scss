@@ -1,0 +1,86 @@
+@import '@/styles/variables/index.scss';
+
+.portfolio {
+    max-width: 68rem;
+
+    .containProjects {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        @include media(laptop) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        > div {
+            margin: 0 auto;
+            width: 90%;
+
+            @include media(laptop) {
+                margin: unset;
+                width: calc(100% / 2 - 0.3125rem);
+            }
+
+            > div {
+                margin-top: 1.875rem;
+
+                .titleContainer {
+                    background-color: map-get($color, 'background');
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    @include media(laptop) {
+                        flex-direction: row;
+                    }
+
+                    h3 {
+                        margin: 0.3125rem;
+                        padding: 0.125rem 0.3125rem;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+
+                        @include media(laptop) {
+                            justify-content: space-around;
+                        }
+
+                        li {
+                            background-color: map-get($color, 'secondary');
+                            border-radius: 0.3125rem;
+                            color: map-get($color, 'white');
+                            font-size: .75rem;
+                            font-weight: bold;
+                            margin: 0.3125rem;
+                            padding: 0.125rem 0.3125rem;
+
+                            @include media(laptop) {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    height: 300px;
+                }
+            }
+
+            a {
+                border-radius: 0;
+                margin-top: 0.3125rem;
+                text-align: center;
+                width: 100%;
+
+                &:hover {
+                    color: white;
+                    background-color: map-get($color, 'primary');
+                }
+            }
+        }
+    }
+}
